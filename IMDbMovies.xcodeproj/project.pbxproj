@@ -14,6 +14,9 @@
 		06D1D79E2A0ABD4700881D08 /* IMDbMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1D79D2A0ABD4700881D08 /* IMDbMoviesTests.swift */; };
 		06D1D7A82A0ABD4700881D08 /* IMDbMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1D7A72A0ABD4700881D08 /* IMDbMoviesUITests.swift */; };
 		06D1D7AA2A0ABD4800881D08 /* IMDbMoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1D7A92A0ABD4800881D08 /* IMDbMoviesUITestsLaunchTests.swift */; };
+		06D1D7BB2A0AD01B00881D08 /* HundredMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1D7BA2A0AD01B00881D08 /* HundredMoviesView.swift */; };
+		06D1D7BD2A0AD09900881D08 /* HundredMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1D7BC2A0AD09900881D08 /* HundredMoviesViewModel.swift */; };
+		06D1D7BF2A0AD22600881D08 /* MovieDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1D7BE2A0AD22600881D08 /* MovieDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		06D1D7A32A0ABD4700881D08 /* IMDbMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMDbMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D1D7A72A0ABD4700881D08 /* IMDbMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMDbMoviesUITests.swift; sourceTree = "<group>"; };
 		06D1D7A92A0ABD4800881D08 /* IMDbMoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMDbMoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06D1D7BA2A0AD01B00881D08 /* HundredMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredMoviesView.swift; sourceTree = "<group>"; };
+		06D1D7BC2A0AD09900881D08 /* HundredMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredMoviesViewModel.swift; sourceTree = "<group>"; };
+		06D1D7BE2A0AD22600881D08 /* MovieDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,10 @@
 		06D1D78B2A0ABD3900881D08 /* IMDbMovies */ = {
 			isa = PBXGroup;
 			children = (
+				06D1D7B62A0ACF4700881D08 /* Model */,
+				06D1D7B72A0ACF5300881D08 /* View */,
+				06D1D7B92A0ACFA000881D08 /* ViewModel */,
 				06D1D78C2A0ABD3A00881D08 /* IMDbMoviesApp.swift */,
-				06D1D78E2A0ABD3A00881D08 /* ContentView.swift */,
 				06D1D7902A0ABD4700881D08 /* Assets.xcassets */,
 				06D1D7922A0ABD4700881D08 /* Preview Content */,
 			);
@@ -125,6 +133,31 @@
 				06D1D7A92A0ABD4800881D08 /* IMDbMoviesUITestsLaunchTests.swift */,
 			);
 			path = IMDbMoviesUITests;
+			sourceTree = "<group>";
+		};
+		06D1D7B62A0ACF4700881D08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06D1D7BE2A0AD22600881D08 /* MovieDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06D1D7B72A0ACF5300881D08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06D1D78E2A0ABD3A00881D08 /* ContentView.swift */,
+				06D1D7BA2A0AD01B00881D08 /* HundredMoviesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06D1D7B92A0ACFA000881D08 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				06D1D7BC2A0AD09900881D08 /* HundredMoviesViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D1D7BD2A0AD09900881D08 /* HundredMoviesViewModel.swift in Sources */,
 				06D1D78F2A0ABD3A00881D08 /* ContentView.swift in Sources */,
+				06D1D7BF2A0AD22600881D08 /* MovieDataModel.swift in Sources */,
+				06D1D7BB2A0AD01B00881D08 /* HundredMoviesView.swift in Sources */,
 				06D1D78D2A0ABD3A00881D08 /* IMDbMoviesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
